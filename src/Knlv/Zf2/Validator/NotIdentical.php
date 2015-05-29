@@ -50,6 +50,7 @@ class NotIdentical extends Identical
 
         if ($isValid) {
             $this->error(self::SAME);
+
             return false;
         }
 
