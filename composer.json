@@ -22,10 +22,12 @@
     },
     "require": {
         "php": ">=5.3.23",
-        "zendframework/zend-validator": "~2.0"
+        "zendframework/zend-validator": "~2.0",
+        "ddeboer/vatin": "@stable"
     },
     "require-dev": {
-        "funkatron/funit": "0.6.0"
+        "funkatron/funit": "0.6.0",
+        "fabpot/php-cs-fixer": "1.*"
     },
     "autoload": {
         "psr-0": {
