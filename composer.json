@@ -24,7 +24,7 @@
         "php": ">=5.3.23",
         "zendframework/zend-validator": "~2.0",
         "ddeboer/vatin": "@stable",
-        "kanellov/greek-vat-validator": "dev-master"
+        "kanellov/greek-vat-validator": "~0.1"
     },
     "require-dev": {
         "funkatron/funit": "0.6.0",
