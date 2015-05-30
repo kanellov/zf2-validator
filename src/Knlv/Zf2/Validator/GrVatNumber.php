@@ -2,7 +2,6 @@
 
 namespace Knlv\Zf2\Validator;
 
-use Knlv\greek_vat_validator;
 use Zend\Validator\AbstractValidator;
 
 class GrVatNumber extends AbstractValidator
@@ -16,7 +15,7 @@ class GrVatNumber extends AbstractValidator
     public function isValid($value)
     {
         $this->setValue($value);
-        if (!greek_vat_validator($value)) {
+        if (!\Knlv\greek_vat_validator($value)) {
             $this->error(self::INVALID);
 
             return false;
