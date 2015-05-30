@@ -40,7 +40,7 @@ fu::test('Test not_identical validates correctly', function () {
 
 fu::test('Test not_identical messages', function () {
     $validator = fu::fixture('validator');
-    
+
     $validator->setToken('token');
     $validator->isValid('value', array('token' => 'value'));
     fu::has($validator::SAME, $validator->getMessages(), 'Assert same message');

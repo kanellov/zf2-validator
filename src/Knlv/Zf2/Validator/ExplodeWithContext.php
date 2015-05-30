@@ -3,6 +3,7 @@
 /**
  * Knlv\Zf2\Validator\ExplodeWithContext
  *
+ * @deprecated merged in Zend\Validator\Explode version >= 2.4
  * @link https://github.com/kanellov/zf2-validator
  * @copyright Copyright (c) 2015 Vassilis Kanellopoulos - contact@kanellov.com
  * @license https://raw.githubusercontent.com/kanellov/zf2-validator/master/LICENSE
@@ -10,8 +11,8 @@
 
 namespace Knlv\Zf2\Validator;
 
-use Zend\Validator\Explode;
 use Zend\Validator\Exception\RuntimeException;
+use Zend\Validator\Explode;
 
 class ExplodeWithContext extends Explode
 {

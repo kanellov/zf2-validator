@@ -18,6 +18,7 @@ fu::test('Test explode_with_context passes context', function () {
 
     $validator->setValidator(new Callback(function ($value, $context) {
         fu::equal('value', $context, 'Assert context pass');
+
         return false;
     }));
 
