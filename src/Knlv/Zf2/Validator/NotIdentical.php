@@ -16,14 +16,10 @@ class NotIdentical extends Identical
 {
     const SAME = 'same';
 
-    public function __construct()
+    public function __construct($token = null)
     {
-        call_user_func_array(
-            array(__CLASS__, 'parent::__construct'),
-            func_get_args()
-        );
-
-        $this->messageTemplates[self::SAME] = 'The two given tokens match';
+        $this->messageTemplates[static::SAME] = 'The two given tokens match';
+        parent::__construct($token);
     }
 
     /**
